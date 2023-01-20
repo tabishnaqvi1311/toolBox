@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: lightseagreen;
+    box-shadow: 0px 1px 10px 0px #22262b;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav li {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    margin: 0 20vh;
+}
+
+.mainlogo {
+    font-size: xx-large;
+    font-family: 'Righteous', cursive;
+}
+.mainlogo a,
+.mainlogo a:hover {
+    color: white;
+}
+
+/* main body starts here  */
+/* clockStyle */
+.bodyMainClock {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.boxClock {
+    background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    height: 30vh;
+    border-radius: 7px;
+    font-size: 3.2rem;
+    color: rgb(87, 86, 86);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.time {
+    font-size: 4.3rem;
+    font-weight: 600;
+}
+
+.time,
+.date {
+    margin:  0 auto;
+    width: 90%;
+}
+/* clock style end  */
+
+
+/* counterStyle */
+.bodyMainCounter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.boxDisplayCounter {
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: aliceblue;
+    height: 30vh;
+    width: 20%;
+    overflow-y: hidden;
+}
+
+.boxDisplayCounter p {
+    text-align: center;
+    margin: 9vh 0;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.counterButton button{
+    background-color: whitesmoke;
+    border: 1px solid lightseagreen;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto 10px;
+
+}
+
+.counterButton button:hover {
+    background-color: lightseagreen;
+    color: white;
+    transition: 0.2s;
+    box-shadow: 0px 1px 10px 0px lightseagreen;
+}
+/* counter style ends  */
+
+/* main body style  */
+
+body {
+    background-color: rgb(252, 244, 233);
+}
+
+.bodyMain p {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2rem
+}
+
+a:hover {
+    color: darkgray;
+}
+
+.tools {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.tools li {
+    margin: 2vh 5vh;
+    list-style-type: none;
+}
+
+u {
+    color: lightseagreen;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+@media (max-width: 900px) {
+
+    body {
+        overflow-y: none;
+    }
+
+
+    .boxClock {
+        width: 300px;
+        height: 100%;
+        border-radius: 7px;
+        font-size: larger;
+        color: rgb(87, 86, 86);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .time {
+        font-size: 40px;
+    }
+
+    .boxDisplayCounter {
+        margin: 20px;
+        border: 1px solid gray;
+        border-radius: 7px;
+        background-color: lightyellow;
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+    }
+
+}
+
+
+
+
+
+
