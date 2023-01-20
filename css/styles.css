@@ -51,6 +51,7 @@ nav li {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 0px 1px 20px -9px rgb(0, 0, 0);
 }
 
 .time {
@@ -76,12 +77,12 @@ nav li {
 
 .boxDisplayCounter {
     margin: 20px;
-    border: 1px solid gray;
-    border-radius: 7px;
+    border-radius: 15px;
     background-color: aliceblue;
     height: 30vh;
     width: 20%;
     overflow-y: hidden;
+    box-shadow: 0px 1px 20px -9px rgb(0, 0, 0);
 }
 
 .boxDisplayCounter p {
@@ -89,6 +90,7 @@ nav li {
     margin: 9vh 0;
     font-size: 100px;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .counterButton button{
@@ -104,7 +106,7 @@ nav li {
     background-color: lightseagreen;
     color: white;
     transition: 0.2s;
-    box-shadow: 0px 1px 10px 0px lightseagreen;
+    box-shadow: 0px 1px 20px 0px lightseagreen;
 }
 /* counter style ends  */
 
