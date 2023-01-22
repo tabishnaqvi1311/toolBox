@@ -51,23 +51,27 @@ function setVal() {
 }
 
 //caclulator
+// to implement functionality for M+/M- 
+// to implement try cacth statement incase user enters invalid input
+let newString = "";
+let buttons = document.querySelectorAll('.n');
 
-// document.getElementById("0️⃣") = 0
-// document.getElementById("1️⃣") = 1
-// document.getElementById("2️⃣") = 2
-// // document.getElementById("0️⃣") = 3
-countForCalc = 0;
-const buttons = document.querySelectorAll('.n')
-let inn = document.getElementById('innerCalc').innerHTML
-sum = 0;
+Array.from(buttons).forEach((n) =>{
+    n.addEventListener('click', (call) =>{
+        if (call.target.innerHTML == '='){
+            newString = eval(newString);
+            document.querySelector('input').value = newString;
+        }
 
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
-        document.getElementById('innerCalc').innerHTML = this.innerHTML;
-        function add() {
-            sum = document.getElementById('innerCalc').innerHTML + document.getElementById('innerCalc').innerHTML
+        else if(call.target.innerHTML == 'C'){
+            newString = ""
+            document.querySelector('input').value = newString
+        }
+
+        else {
+            newString = newString + " " + call.target.innerHTML;
+            document.querySelector('input').value = newString;
         }
     })
-}
-
+})
 
