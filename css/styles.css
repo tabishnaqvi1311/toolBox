@@ -86,7 +86,7 @@ nav li {
     height: 30vh;
     width: 20%;
     overflow-y: hidden;
-    box-shadow: 0px 1px 20px -9px rgb(0, 0, 0);
+    
 }
 
 .boxDisplayCounter p {
@@ -150,86 +150,102 @@ nav li {
 
 .calculatorBox {
     background-color: aliceblue;
-    height: 30rem;
-    width: 20rem;
-    margin-top: 150px;
-    border: #22262b solid 2px;
-    border-radius: 10px;
+    height: 29rem;
+    width: 18rem;
+    margin-top: 100px;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: minmax(100px,auto);
     text-align: center;
     overflow: hidden;
+    box-shadow: 0px 1px 15px -1px rgb(45, 46, 46);
 }
 
 .calculatorBox button {
-    padding: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: larger;
+    border: none;
+}
+
+.calculatorBox button:hover {
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .displayCalc {
     grid-column: 1/5;
     grid-row: 1;
-    border: #22262b solid 1px;
-    margin: 5px;
+}
+
+.displayCalc input {
+    margin: 10px;
     border-radius: 10px;
     display: flex;
     justify-content: start;
-}
-
-.displayCalc p {
-    margin: auto 10px;
-    font-size: 40px;
-}
-
-.seven {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.eight {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.nine {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.four {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.five {
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.six {
-    grid-column: 3;
-    grid-row: 3;
-}
-
-.one {
-    grid-column: 1;
-    grid-row: 4;
-}
-
-.two {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-.three {
-    grid-column: 3;
-    grid-row: 4;
+    padding: 25px 1px;
+    font-size: 21px;
+    overflow: hidden;
+    border:none;
+    box-shadow: 0px 1px 5px -1px rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .zero {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 6;
+} 
+
+.numbers button{
+    box-shadow: 0px 1px 5px -1px lightseagreen;
+    background-color: whitesmoke;
 }
+
+.numbers button:hover {
+    box-shadow: 0px 1px 10px -1px lightseagreen;
+    background-color: lightseagreen;
+}
+.equals button {
+    background-color: orange;
+    border: 1px solid orange;
+}
+
+.equals button:hover {
+    box-shadow: 0px 1px 10px -1px orange;    
+}
+
+.clear button {
+    background-color: lightgrey;
+    color: black;
+}
+
+.clear button:hover {
+    background-color: black;
+    color: white;
+}
+
+.plus button,
+.minus button,
+.div button,
+.mult button,
+.changeSign button,
+.percent button,
+.point button{
+    box-shadow: 0px 1px 5px -1px rgb(0, 0, 0);
+}
+
+.plus button:hover,
+.minus button:hover,
+.div button:hover,
+.mult button:hover,
+.changeSign button:hover,
+.percent button:hover,
+.point button:hover {
+    box-shadow: 0px 1px 10px -1px dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+}
+
 /* main body style  */
 
 body {
