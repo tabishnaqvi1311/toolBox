@@ -24,12 +24,16 @@ nav li {
 }
 
 .mainlogo {
-    font-size: xx-large;
     font-family: 'Righteous', cursive;
 }
-.mainlogo a,
+
+.mainlogo a {
+    color: aliceblue;
+    font-size: xx-large;
+}
+
 .mainlogo a:hover {
-    color: white;
+    color: lightgray;
 }
 
 /* main body starts here  */
@@ -99,7 +103,6 @@ nav li {
     border-radius: 10px;
     padding: 20px;
     margin: auto 10px;
-
 }
 
 .counterButton button:hover {
@@ -108,8 +111,125 @@ nav li {
     transition: 0.2s;
     box-shadow: 0px 1px 20px 0px lightseagreen;
 }
+
+#reducButton {
+    border: 1px solid rgb(201, 79, 79);
+}
+
+#reducButton:hover {
+    background-color: rgb(201, 79, 79);
+    box-shadow: 0px 1px 20px 0px rgb(201, 79, 79);
+}
+
+.setVal {
+    display: flex;
+    flex-direction: row;
+}
+
+.setVal input {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid lightseagreen;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+.setVal button {
+    padding: 10px;
+}
+
 /* counter style ends  */
 
+/* calculator style starts */
+
+.bodyMainCalc {
+    display: flex;
+    justify-content: center;
+}
+
+.calculatorBox {
+    background-color: aliceblue;
+    height: 30rem;
+    width: 20rem;
+    margin-top: 150px;
+    border: #22262b solid 2px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px,auto);
+    text-align: center;
+    overflow: hidden;
+}
+
+.calculatorBox button {
+    padding: 25px;
+}
+
+.displayCalc {
+    grid-column: 1/5;
+    grid-row: 1;
+    border: #22262b solid 1px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.displayCalc p {
+    margin: auto 10px;
+    font-size: 40px;
+}
+
+.seven {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.eight {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.nine {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.three {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.zero {
+    grid-column: 1;
+    grid-row: 5;
+}
 /* main body style  */
 
 body {
@@ -154,8 +274,9 @@ footer {
     text-align: center;
     background-color: gray;
     color: white;
-    bottom: 0;
     width: 100%;
+    bottom: 0;
+    margin:0;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -184,9 +305,6 @@ footer {
 
     .boxDisplayCounter {
         margin: 20px;
-        border: 1px solid gray;
-        border-radius: 7px;
-        background-color: lightyellow;
         height: 100%;
         width: 100%;
         overflow: scroll;
