@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="mainlogo"><a href="../index.html">toolBox</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bodyMainCalc">
+        <div class="calculatorBox">
+            <div class="displayCalc" >
+                <p id = "innerCalc">0</p>
+            </div>
+            <div class="one"><button class = "n">1</button></div>
+            <div class="two"><button class = "n">2</button></div>
+            <div class="three"><button class= "n">3</button></div>
+            <div class="four"><button class = "n">4</button></div>
+            <div class="five"><button class = "n">5</button></div>
+            <div class="six"><button class = "n">6</button></div>
+            <div class="seven"><button class= "n">7</button></div>
+            <div class="eight"><button class = "n">8</button></div>
+            <div class="nine"><button class = "n">9</button></div>
+            <div class="plus"><button id = "add" onclick="add()">+</button></div>
+            <div class="divide"><button id = "div" onclick="divide()">÷</button></div>
+            <div class="minus"><button id = "sub" onclick="subtract()">-</button></div>
+            <div class="multiply"><button id = "mul" onclick="mult()">x</button></div>
+            <div class="equals"><button id = "eq" onclick="ans()">=</button></div>
+            <div class="submit"><button type="reset" id="clear">C</button></div>
+        </div>
+    </div>
+    <!-- <footer>
+        Made with ❤ and JS by Tabish Naqvi<br>
+        toolBox&copy; All Rights Reserved
+    </footer> -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

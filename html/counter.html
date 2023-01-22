@@ -26,11 +26,20 @@
         </div>
         <div class="counterButton">
             <button id="countButton" onclick="countPlus()">
-                PRESS
+                +
+            </button>
+            <button id="reducButton" onclick="countMinus()">
+                -
             </button>
             <button id = 'resetButton' onclick = "resetCount()">
                 RESET
             </button>
+            <div class="setVal">
+                <input name="setValTxt" type="text" placeholder="Set Value..." id = "setValBox">
+                <button type="submit" onclick="setVal()" id = "setValButton">
+                    SET
+                </button>
+            </div>
         </div>
     </div>
     <footer>
