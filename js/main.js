@@ -27,14 +27,47 @@ setInterval(() => {
 }, 1000);   //set interval function resets every 1000 milliseconds or 1 second
 
 //counter app
-count = 0
+let count = 0;
+let defaultVal = 1;
 
 function countPlus() {
-    count = count + 1;
+    count = count + defaultVal;
+    document.getElementById('display').innerHTML = count;
+}
+
+function countMinus() {
+    count = count - defaultVal;
     document.getElementById('display').innerHTML = count;
 }
 
 function resetCount() {
     count = 0;
+    defaultVal = 1;
     document.getElementById('display').innerHTML = count;
 }
+
+function setVal() {
+    defaultVal = parseInt(document.getElementById('setValBox').value);
+}
+
+//caclulator
+
+// document.getElementById("0️⃣") = 0
+// document.getElementById("1️⃣") = 1
+// document.getElementById("2️⃣") = 2
+// // document.getElementById("0️⃣") = 3
+countForCalc = 0;
+const buttons = document.querySelectorAll('.n')
+let inn = document.getElementById('innerCalc').innerHTML
+sum = 0;
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function() {
+        document.getElementById('innerCalc').innerHTML = this.innerHTML;
+        function add() {
+            sum = document.getElementById('innerCalc').innerHTML + document.getElementById('innerCalc').innerHTML
+        }
+    })
+}
+
+
